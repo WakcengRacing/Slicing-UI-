@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider</title>
+  <style>
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  transition: 0.5s;
+}
+
+.slide img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: white;
+  padding: 16px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="slider">
+    <div class="slides">
+      <!-- Slide 1 -->
+      <div class="slide">
+        <img src="assets/bs.png" alt="Slide 1">
+      </div>
+      <!-- Slide 2 -->
+      <div class="slide">
+        <img src="assets/bs1.png" alt="Slide 2">
+      </div>
+      <!-- Slide 3 -->
+      <div class="slide">
+        <img src="assets/bs2.png" alt="Slide 3">
+      </div>
+    </div>
+
+    <!-- Left and Right arrows -->
+    <a class="prev" onclick="moveSlides(-1)">&#10094;</a>
+    <a class="next" onclick="moveSlides(1)">&#10095;</a>
+  </div>
+
+</body>
+<script>
+        let slideIndex = 0;
+const slides = document.querySelector('.slides');
+const totalSlides = document.querySelectorAll('.slide').length;
+
+function moveSlides(n) {
+  slideIndex += n;
+  if (slideIndex >= totalSlides) slideIndex = 0;
+  if (slideIndex < 0) slideIndex = totalSlides - 1;
+  slides.style.transform = `translateX(${-slideIndex * 100}%)`;
+}
+
+// Automatically move to the next slide every 5 seconds
+setInterval(() => moveSlides(1), 5000);
+
+</script>
+</html>

@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    width: auto;
+    height: 900px;
+
+}
+/* navbar */
+nav {
+    background-color: #52cde0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    position: static;
+    border-bottom: 5px solid black;
+
+}
+
+nav .logo span {
+    color: red;
+    font-weight: 900;
+}
+
+nav .logo {
+    margin-left: 60px;
+    margin-top: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0rem 1rem;
+    align-items: center;
+}
+
+
+
+nav ul .nav-item p {
+    color: black;
+    width: 100%;
+    height: 20px;
+    font-size: 15px;
+    font-weight: 900;
+    transition: font-size 200ms ease-in-out;
+}
+nav ul .nav-item p:hover {
+    color: white;
+    width: 100%;
+    height: 20px;
+    margin-top: -5px;
+    font-size: 17px;
+    font-weight: 900;
+}
+nav ul .nav-item{
+    padding-left: 50px;
+
+}
+nav ul .nav-item button{
+    background: transparent;
+    padding: 0.2rem 0.2rem;
+    width: 80px;
+    height: 40px;
+    border: none; 
+    transition: all 500ms;
+  
+}
+nav ul .nav-item button:hover{
+    background: orange;
+    padding: 0.2rem 0.2rem;
+    width: 80px;
+    height: 40px;
+    border-radius: 13%;
+}
+
+
+
+/* footer */
+footer {
+    width: auto;
+    height: 50px;
+
+}
+
+.wrapper {
+    width: auto;
+    height: 50px;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper .call {
+    padding: 0.5rem 2rem;
+}
+
+.wrapper .call button {
+    align-content: start;
+    width: 80px;
+    height: 30px;
+    background: orange;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.wrapper .call button a {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    text-align: center;
+}
+
+.wrapper .copy {
+    margin-top: 1rem;
+    margin-right: 14rem;
+}
+
+.wrapper .copy p {
+    font-weight: 900;
+    font-size: large;
+}
+.wrapper .copy p:hover{
+    color: white;
+    transition: all 200ms;
+    font-weight: 900;
+    font-size: large;
+}

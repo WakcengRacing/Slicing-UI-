@@ -1,0 +1,294 @@
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.body {
+    width: auto;
+    height: 800px;
+    display: flex;
+    /* background-color: red; */
+}
+
+.body .menu {
+    width: 30%;
+    height: auto;
+    border-right: 5px solid black;
+    /* background-color: blue; */
+}
+
+.body .menu ul {
+    margin: 10rem 1rem;
+    width: auto;
+    height: auto;
+    /* background-color: red; */
+}
+
+.menu-item {
+    width: auto;
+    height: 5rem;
+    /* background-color: green; */
+}
+
+.menu .menu-item button {
+    background: transparent;
+    border: none;
+    width: 100%;
+    height: 3rem;
+    background-color: #52cde0;
+    border-radius: 1rem;
+    transition: all 400ms ease-in-out;
+
+}
+
+.menu .menu-item button:hover {
+    background: transparent;
+    border: none;
+    width: 100%;
+    height: 3rem;
+    background-color: orange;
+    border-radius: 1rem;
+}
+
+.menu ul .menu-item button p {
+    color: black;
+    font-weight: bold;
+    height: 2rem;
+    width: 100%;
+    font-size: x-large;
+    transition: font-size 200ms ease-in-out;
+}
+
+.menu-item button p:hover {
+    color: white;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-top: -13px;
+}
+
+.menu-item-active {
+    width: auto;
+    height: 5rem;
+    /* background-color: green; */
+}
+
+.menu .menu-item-active button {
+    background: transparent;
+    border: none;
+    width: 100%;
+    height: 3rem;
+    background-color: #52cde0;
+    border-radius: 1rem;
+    transition: all 400ms ease-in-out;
+
+}
+
+.menu .menu-item-active button:hover {
+    background: transparent;
+    border: none;
+    width: 100%;
+    height: 3rem;
+    background-color: orange;
+    border-radius: 1rem;
+    transition: all 400ms ease-in-out;
+
+}
+
+.menu-item-active button p {
+    color: black;
+    font-weight: bold;
+    height: 2rem;
+    width: 100%;
+    font-size: x-large;
+    transition: font-size 200ms ease-in-out;
+
+}
+
+.menu-item-active button p:hover {
+    color: white;
+    margin-top: -13px;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.body .content {
+    width: 70%;
+    height: auto;
+    /* background-color: green; */
+}
+
+.body .content .content-nav {
+    /* width: 64%;
+    height: 10%;
+    margin-top: 1rem;
+    margin-left: 20%;
+    background-color: red; */
+    margin-top: 1rem;
+    margin-left: 15rem;
+    border-radius: 1.5rem;
+    padding-top: 1.3rem;
+    padding-left: 1rem;
+    width: 50%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #52cde0;
+}
+
+.content-nav button {
+    width: 160px;
+    height: 40px;
+    border: none;
+    border-radius: 0.5rem;
+    background: gray;
+}
+
+.content-nav .active {
+    width: 160px;
+    height: 40px;
+    border: none;
+    border-radius: 0.5rem;
+    background: orange;
+}
+
+.content-nav p {
+    color: black;
+    font-weight: 900;
+    font-size: 15px;
+    word-spacing: 5px;
+    transition: font-size 300ms ease-in-out;
+}
+
+.content-nav .p-active {
+    color: white;
+    font-weight: 900;
+    font-size: 15px;
+    word-spacing: 5px;
+    transition: font-size 300ms ease-in-out;
+}
+
+.content-menu {
+    width: 100%;
+    height: 350px;
+    /* background-color: red; */
+    margin: 0.5rem 0.5rem 0.5rem 2.5rem;
+}
+
+.menu-container {
+    width: 100%;
+    height: 350px;
+    /* background-color: yellow; */
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.menu-container ::-webkit-scrollbar {
+    display: none;
+}
+
+.content-menu .menu-container  .menu {
+    display: flex;
+    width: max-content;
+}
+
+.content-menu .menu-container  .menu .menu-item-card {
+    width: 250px;
+    height: 300px;
+    background-color: #f4f4f4;
+    margin: 1.5rem;
+    border-radius: 20% 20% 5% 5%;
+    margin-left: 3rem;
+    user-select: none;
+}
+
+.menu-container  .menu .menu-item-card img {
+    width: 100%;
+    height: 65%;
+}
+
+.menu-container  .menu .menu-item-card h2 {
+    font-weight: 600;
+    margin-left: 1rem;
+    font-size: x-large;
+}
+
+.menu-container  .menu .menu-item-card p {
+    font-weight: 900;
+    margin-left: 1rem;
+    margin-top: 0.3rem;
+    font-size: medium;
+}
+
+.menu-container  .menu .menu-item-card button {
+    background: transparent;
+    border: none;
+    width: 100%;
+    height: 2rem;
+
+    background-color: #52cde0;
+    border-radius: 0.5rem;
+}
+
+.content .content-menu .menu-container  .menu .menu-item-card  button p {
+    text-align: center;
+
+}
+.content .content-menu .menu-container  .menu .menu-item-card form{
+    /* padding-top: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem; */
+    padding: 0.5rem /*top*/ 1rem /*left*/ 0.5rem /*bottom*/ 1rem /*right    */;
+}
+.content-promo{
+    width: 100%;
+    height: 300px;
+    /* background-color: rebeccapurple; */
+    padding: 0rem 0.5rem 0.5rem 5rem;
+}
+
+.slider {
+    position: relative;
+    width: 1150px;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    transition: 0.5s;
+  }
+  
+  .slide img {
+    width: 1000px;
+    height: 300px;
+    vertical-align: middle;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: white;
+    padding: 16px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }

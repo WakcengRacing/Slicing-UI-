@@ -1,0 +1,139 @@
+
+/* body */
+.content {
+    width: auto;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: red; */
+    padding: 3rem 2rem;
+}
+
+.content .product-img img {
+    padding-bottom: 2rem;
+    width: 450px;
+    height: 350px;
+}
+
+.content-about {
+    width: 50%;
+    height: 300px;
+}
+
+header {
+    margin-top: 20px;
+}
+
+header h2 {
+    color: black;
+    font-weight: 600;
+    font-size: xx-large;
+}
+
+header span {
+    color: red;
+}
+
+.content-about .isi {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.content-about .isi p {
+    color: black;
+    font-weight: 500;
+    font-size: large;
+}
+
+.bg-wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 0rem;
+}
+
+.promo header h3 {
+    font-size: xx-large;
+    text-align: center;
+}
+
+.promo .promo-img img {
+    margin-top: 0.5rem;
+    width: 350px;
+    height: 400px;
+}
+
+.item header h3 {
+    font-size: xx-large;
+    text-align: center;
+}
+
+.bs-wrapper {
+    margin-top: 0.5rem;
+}
+
+.bs-wrapper .flex-img img {
+    width: 150px;
+    height: 150px;
+    margin-left: 1rem;
+    border-radius: 100%;
+}
+
+.flex-img {
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+.p-flex {
+    margin: 3rem 0rem 0rem 3rem;
+}
+
+.bs-wrapper .item-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.bs-wrapper .item-img {
+    margin: 0rem 0rem 0rem 4rem;
+    display: flex;
+}
+
+.bs-wrapper .item-img button {
+    background: orange;
+    padding: 0.2rem 0.2rem;
+    border-radius: 2rem;
+    width: 100px;
+    height: 40px;
+    border: none;
+}
+.bs-wrapper .item-img button:hover {
+    background: hwb(39 2% 18%);
+    padding: 0.2rem 0.2rem;
+    border-radius: 2rem;
+    width: 100px;
+    height: 40px;
+    border: none;
+}
+.bs-wrapper .item-img form{
+    margin: 8rem 0rem 0rem 4rem;
+    width: 100px;
+    height: 40px;
+}
+.bs-wrapper .item-img p {
+    text-decoration: none;
+    width: 100%;
+    margin-top: 8px;
+    height: 40px;
+    color: black; 
+    font-weight: 900;
+}
+
+.bs-wrapper .item-img p:hover {
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    transition: all 200ms ease-in-out;
+}
+
+.bs-wrapper .flex {
+    display: flex;
+}
